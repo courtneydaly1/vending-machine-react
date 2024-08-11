@@ -11,6 +11,7 @@ const Doritos = () => {
             alt="Doritos"
             style={{ width: "200px", maxWidth: '200px', height: 'auto' }}
         />
+        <br></br>
       <Link to="/">Back to Vending Machine</Link>
     </div>
   );

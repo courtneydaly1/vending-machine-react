@@ -1,0 +1,43 @@
+.vending-machine {
+    position: relative; /* Required for positioning the overlay */
+    text-align: center;
+    padding: 20px;
+    background-image: url('https://images.unsplash.com/photo-1670653357289-68c4f2961895?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dmVuZGluZyUyMG1hY2hpbmV8ZW58MHx8MHx8fDA%3D');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fix the background image in place */
+    color: rgb(198, 134, 188); /* Change text color to ensure readability */
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.vending-machine::before {
+    content: ""; /* Empty content */
+    position: absolute; /* Absolute positioning for overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* White overlay with 50% opacity */
+    z-index: -1; /* Place behind the content */
+}
+
+.vm-greeting {
+    margin-bottom: 20px;
+}
+
+.vm-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+}
+
+
+.vm-link:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque on hover */
+    color: #e6e6e6; /* Lighter color on hover */
+}

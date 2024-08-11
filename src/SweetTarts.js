@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "./SweetTart.css";
+
 
 
 const SweetTart = () => {
@@ -13,6 +13,7 @@ const SweetTart = () => {
             alt="SweetTarts"
             style={{ width: "200px", maxWidth: '200px', height: 'auto' }}
             />
+            <br></br>
             <Link to="/">Back to Vending Machine</Link>
         </div>
     );
